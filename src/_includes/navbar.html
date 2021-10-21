@@ -1,1 +1,42 @@
+{% comment %}
+Lien actuel avec class="active"
+Nous nous pouvons pas utiliser {% link %} dans le "if". Donc il faut écrire le lien manuellement.
+{% endcomment %}
+
+<div class="nav">
+    <div class="nav-top">
+        <div class="icon-wrap">
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="but">
+            Get Started
+        </div>
+    </div>
+    <div class="nav-bottom">
+        <img src="../assets/img/logo (1).png" alt="icon" class="logo">
+        <div class="links">
+            <a href="{% link accueil.html %}" class="nav-item {% if page.url == '/' %} activate {% endif %}">Accueil</a>
+            <a href="{% link notre-entreprise.html %}" class="nav-item {% if page.url == '/notre-entreprise' %} activate {% endif %}">Notre entreprise</a>
+            <a href="{% link service.html %}" class="nav-item {% if page.url == '/service' %} activate {% endif %}">Service</a>
+            <a href="{% link contact.html %}" class="nav-item {% if page.url == '/contact' %} activate {% endif %}">Contact</a>
+            <a href="{% link devis.html %}" class="nav-item {% if page.url == '/devis' %} activate {% endif %}">Devis</a>
+        </div>
+        <div class="search-wrap">
+            <div class="search">
+                <i class="far fa-search"></i>
+            </div>
+            <div class="bars">
+                <i class="far fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</div>
 
