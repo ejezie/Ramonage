@@ -255,7 +255,11 @@ body {
     margin: 4rem 0;
     @media (max-width: 1200px) {
       flex-direction: column;
-      margin: 1rem 0;
+      margin: 3rem 0;
+    }
+    @media (max-width: 460px) {
+      flex-direction: column;
+      margin: 0rem 0;
     }
     .left {
       width: 50vw;
@@ -568,7 +572,7 @@ body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin: 4rem;
+    margin: 4rem 0;
     .contents{
       width: 100%;
       display: flex;
@@ -582,10 +586,16 @@ body {
         justify-content: center;
         flex-direction: column;
         border: 1.8px solid #e8e8e8;
-        padding: 3rem;
+        width: 22rem;
+        height: 19rem;
         cursor: pointer;
         margin-right: 1.5rem;
         margin-bottom: 1.5rem;
+        @media (max-width: 450px) {
+          width: 18rem;
+          height: 16rem;
+          margin-right: 0rem;
+        }
         img{
           width: 3.6rem;
           margin-bottom: 2rem;
@@ -602,5 +612,243 @@ body {
     }
   }
 }
-
 // Home Section Four End
+// 
+// Home Section Five Start
+
+.five{
+  display: flex;
+  width: 100vw;
+  .content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .contents{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+      .img-wrap{
+        width: 25vw;
+        height: 50vh;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        &:hover img{
+          transform: scale(1.1);
+        }
+        &:hover .text-wrap{
+          opacity: 1;
+        }
+        @media (max-width: 720px) {
+          width: 50vw;
+        }
+        @media (max-width: 400px) {
+          width: 100vw;
+        }
+        img{
+          width: 25vw;
+          height: 50vh;
+          transition: all 0.3s;
+          object-fit: cover;
+          @media (max-width: 720px) {
+            width: 50vw;
+          }
+          @media (max-width: 400px) {
+            width: 100vw;
+          }
+        }
+        .text-wrap{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(7, 6, 6, 0.5);
+          opacity: 0;
+          transition: all 0.3s;
+          .sub-heading-s{
+            color: white;
+            margin-bottom: 0.5rem;
+          }
+          .heading{
+            font-size: 1.5rem;
+            text-align: center;
+            color: white;
+            transition: all 0.3s;
+            &:hover{
+              color: var(--thm-base);
+            }
+            @media (max-width: 960px) {
+              font-size: 1.2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Home Section Five End
+
+
+// Home Section Six Start
+.six{
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  .content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .contents{
+      display: flex;
+      align-items: flex-start;
+      @media (max-width: 960px) {
+        flex-direction: column;
+      }
+      .left{
+        width: 50vw;
+        @media (max-width: 960px) {
+         width: 100vw;
+        }
+        .left-wrap{
+          margin-left: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-top: 4rem;
+          .content{
+            // width: 15rem;
+            margin-bottom: 1.5rem;
+            margin-right: 1.3rem;
+            .img-wrap{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 4.3rem;
+              width: 4.3rem;
+              background-color: var(--thm-base);
+              border-radius: 5px;
+              margin-bottom: 1.1rem;
+              img{
+                width: 3rem;
+              }
+            }
+            .sub-heading-s{
+              margin-bottom: 1.1rem;
+            }
+            .text{
+              max-width: 260px;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      .right{
+        width: 50vw;
+        display: flex;
+        justify-content: flex-start;
+        @media (max-width: 960px) {
+          width: 100vw;
+         }
+        .img-wrap{
+          width: 100%;
+          @media (max-width: 960px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 3rem;
+          }
+          .camera{
+            @media (max-width: 1120px) {
+              width: 30rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Home Section Six End
+
+
+// Home Section Seven Start
+.seven{
+  display: flex;
+  width: 100vw;
+  background-color: rgb(250, 250, 250);
+  .content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    .heading-wrap{
+      margin-top: 3rem;
+    }
+    .contents{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 4rem 4rem;
+      .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        width: 23rem;
+        height: 30rem;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+
+        img{
+          margin-bottom: 1rem;
+          border-radius: 50%;
+        }
+        .sub-heading-b{
+          margin-bottom: 1rem;
+        }
+        .text{
+          text-align: center;
+          margin-bottom: 1rem;
+          max-width: 300px;
+        }
+        .icon-wrap{
+          display: flex;
+          align-items: center;
+          .icon{
+            height: 2.7rem;
+            width: 2.7rem;
+            border: 1.5px solid var(--thm-base);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            i{
+              font-size: 1.1rem;
+              color: var(--thm-base);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Home Section Seven End
