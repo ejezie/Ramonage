@@ -3,35 +3,76 @@ layout: default
 permalink: /contact
 ---
 
-<h1>Contact</h1>
+<div class="banner">
+  <div class="content-wrap">
+    <div class="heading">CONTACT US</div>
+  </div>
+</div>
 
-<form class="form" method="post" action="{{ site.data.company.url.notify }}">
-    <input type="hidden" name="lang" value="fr">
-    <input type="hidden" name="type" value="contact">
-    <input type="hidden" name="website" value="{{ site.data.company.websiteId }}">
-    <input type="hidden" name="redirectUrl" value="{{site.url}}{% link formulaire-succes.html %}">
-    <div class="row">
-        <div class="col-6">
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                        <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="commentaire">Commentaire</label>
-                <textarea class="form-control" id="commentaire" rows="3"></textarea>
-            </div>
+<div class="contact">
+  <div class="left">
+    <div class="content-wrap">
+      <div class="content">
+        <div class="sub-heading-b">Address</div>
+        <div class="text">{{site.data.company.address}}</div>
+      </div>
+      <div class="content">
+        <div class="sub-heading-b">Technical Support</div>
+        <div class="text">
+          CCTV regularly broadcasts the forced confessions of accused or
+          convicte.
         </div>
+        <div class="text color">{{site.data.company.email}}</div>
+      </div>
+      <div class="content">
+        <div class="sub-heading-b">Connect With Us</div>
+        <div class="icon-wrap">
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
+  </div>
+  <div class="right">
+    <form action="" class="form">
+      <div class="heading">Contact <span class="color">Us</span></div>
+      <div class="input-wrap1">
+        <label for="name">Name</label> <br />
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+      </div>
+      <div class="input-wrap2">
+        <div class="wrap1">
+          <label for="name">Phone No.</label> <br />
+          <div class="input-btn">
+            <div class="btn">FR</div>
+            <input type="text" name="name" id="name" placeholder="Phone No" class="phone"/>
+          </div>
+        </div>
+        <div class="wrap2">
+          <label for="email">Email</label> <br />
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+      </div>
+      <div class="area-wrap">
+        <label for="message">Message</label> <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Leave Your Message"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.893313020837!2d2.411039715257916!3d48.63102357926584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de6b1e3c0917%3A0x42e1392bc488dd0a!2s7%20Av.%20de%20l&#39;Orme%20%C3%80%20Martin%2C%2091080%20%C3%89vry-Courcouronnes%2C%20France!5e0!3m2!1sen!2sng!4v1636313670859!5m2!1sen!2sng" width="800" height="600" style="border:0; width: 100vw;" allowfullscreen="" loading="lazy"></iframe>
