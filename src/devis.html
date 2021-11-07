@@ -3,50 +3,42 @@ layout: default
 permalink: /devis
 ---
 
-<h1>Devis</h1>
-
-<form class="form" method="post" action="{{ site.data.company.url.notify }}">
-    <input type="hidden" name="lang" value="fr">
-    <input type="hidden" name="type" value="estimate">
-    <input type="hidden" name="website" value="{{ site.data.company.websiteId }}">
-    <input type="hidden" name="redirectUrl" value="{{site.url}}{% link formulaire-succes.html %}">
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">Nous ne partagerons jamais votre email.</small>
+<div class="banner">
+    <div class="content-wrap">
+      <div class="heading">DEVIS</div>
     </div>
-    <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" class="form-control" id="name" name="name">
-    </div>
-    <div class="form-group">
-        <label for="phone">Téléphone</label>
-        <input type="text" class="form-control" id="phone" name="phone">
-    </div>
-    <div class="form-group">
-        <label for="sujet">Sujet</label>
-        <select class="form-control" id="sujet" name="sujet">
-            <option>Service après-vente</option>
-            <option>Devis</option>
-            <option>Recrutement</option>
-            <option>Autre</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label>Votre demande est-elle urgente?</label>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="urgence" id="urgenceOui" value="oui" checked>
-            <label class="form-check-label" for="urgenceOui">Oui</label>
+  </div>
+<div class="devis">
+    <form action="" class="form">
+        <div class="heading">RESERVATION</div>
+        <div class="input-wrap1">
+          <label for="name">Name</label> <br />
+          <input type="text" name="name" id="name" placeholder="Your Name" />
         </div>
-        <div class="form-check">
-            <input class="form-check-input" type="radio" name="urgence" id="urgenceNon" value="non">
-            <label class="form-check-label" for="urgenceNon">Non</label>
+        <div class="input-wrap2">
+          <div class="wrap1">
+            <label for="name">Phone No.</label> <br />
+            <div class="input-btn">
+              <div class="btn">FR</div>
+              <input type="text" name="name" id="name" placeholder="Phone No" class="phone"/>
+            </div>
+          </div>
+          <div class="wrap2">
+            <label for="email">Email</label> <br />
+            <input type="email" name="email" id="email" placeholder="Email" />
+          </div>
         </div>
-    </div>
-
-    <div class="form-group">
-        <label for="commentaire">Commentaire</label>
-        <textarea class="form-control" id="commentaire" rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
+        <div class="area-wrap">
+          <label for="message">Message</label> <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Leave Your Message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+</div>
+  
